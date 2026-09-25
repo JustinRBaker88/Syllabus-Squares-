@@ -36,8 +36,8 @@ export const QuizQuestions = [
     {
         id: 5,
         question: "What Canvas feature do I use to communicate to the whole class?",
-        options: ["Canvas Announcments", "Email", "SMS/Text Message", "Signal"],
-        answer: "Canvas Announcments",
+        options: ["Canvas Announcements", "Email", "SMS/Text Message", "Signal"],
+        answer: "Canvas Announcements",
         explanation: "Professor Rendon plans to use the Announcement feature in Canvas to communicate with the entire class."
     },
     {
@@ -50,23 +50,23 @@ export const QuizQuestions = [
     {
         id: 7,
         question: `What is stated in the "engagement policy?"`,
-        options: ["No usages of laptops or phones", "Umpqua", "Tillamook", "Black Foot" ],
+        options: ["No usages of laptops or phones", "Laptops allowed, no phones", "You can use laptop and phones if you remain engaged", "" ],
         answer: "No usages of laptops or phones",
-        explanation: `he stated "engagement policy" is that during class is that there will be no usage of phones or other screens. Students are expected to only uses such devices outside of class as their usage demonstrates a lack of engagement.`
+        explanation: `he stated "engagement policy" is that during class is that there will be no usage of phones or other screens. Students are expected to only use such devices outside of class as their usage demonstrates a lack of engagement.`
     },
     {
         id: 8,
         question: `What is the AI policy?"`,
         options: ["No AI usage", "Allowed with attribution", "Allowed if you reword it", "ChatGPT is allowed" ],
         answer: "No AI usage",
-        explanation: `AI policy for this class is that it is not allowed. Usage of AI numbs your critical thinking skills, uses signficant natural resources, and their usage is heavy tied to academic dishonesty and lack of proper attribution.`
+        explanation: `AI policy for this class is that it is not allowed. Usage of AI numbs your critical thinking skills, uses significant natural resources, and their usage is heavily tied to academic dishonesty and lack of proper attribution.`
     },
     {
         id: 9,
         question: `How many Make Up opportunities are there this quarter?`,
         options: ["4", "2", "10", "0" ],
         answer: "4",
-        explanation: `There are four make up opportunities during this quarter.`
+        explanation: `There are four make-up opportunities during this quarter.`
     },
     {
         id: 10,
@@ -80,21 +80,21 @@ export const QuizQuestions = [
         question: `What is the late work policy?`,
         options: ["No late work.", "You can submit four assignments late.", "If requested via Email", "Only certain assignments" ],
         answer: "No late work.",
-        explanation: `The late work policy is that late work is not accepted. Work can only be submitted until the "available until" due date. The make up opportunities are designed to accomodate unforseeable events leading to late or missed work.`
+        explanation: `The late work policy is that late work is not accepted. Work can only be submitted until the "available until" due date. The make-up opportunities are designed to accommodate unforeseeable events leading to late or missed work.`
     },
     {
         id: 12,
         question: `True or False: Online assignments have varying due dates.`,
         options: ["True", "False"],
         answer: "False",
-        explanation: `False. Online assignments have a fixed due date.`
+        explanation: `False. Online assignments have a fixed due date. The "available until" date is also fixed.`
     },
     {
         id: 13,
         question: "What building is TCC, food pantry located?",
         options: ["Building 17", "Building 9", "Building 19", "Building F"],
         answer: "Building 17",
-        explanation: "The food panty is located in building 17." 
+        explanation: "The food pantry is located in building 17." 
     }
 ]
 

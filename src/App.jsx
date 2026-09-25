@@ -12,7 +12,7 @@ export default function App() {
         {/* 1. Landing Screen */}
         {view === 'home' && (
           <div className="home-card">
-            <h1>Syllabus Cards</h1>
+            <h1>Syllabus Squares</h1>
             <p>Choose an option to get started:</p>
             
             <div className="button-group">
@@ -39,6 +39,7 @@ export default function App() {
               <button className="btn-small" onClick={() => setView('home')}>
                 Back to Home
               </button>
+              <h3>Justin Baker's PSYCH&200 Syllabus Squares</h3>
             </div>
             <Answers />
           </div>

@@ -62,7 +62,7 @@ return (
 
           <h3>What is stated in the "engagement policy"?</h3>
           <p>
-            The stated "engagement policy" during class is that there will be no usage of phones or other screens. Students are expected to only use such devices outside of class, as their usage demonstrates a lack of engagement.
+            The stated "engagement policy" is that during class there will be no usage of phones or other screens. Students are expected to only use such devices outside of class, as their usage demonstrates a lack of engagement.
           </p>
         </section>
 
@@ -107,7 +107,7 @@ return (
         <section>
           <h2>11. True or False: Online assignments have varying due dates.</h2>
           <p>
-            <strong>False.</strong> Online assignments have a fixed due date.
+            <strong>False.</strong> Online assignments have a fixed due date. The "available until" date is also fixed.
           </p>
 
           <h3>What week/chapter looks interesting to you?</h3>
@@ -138,7 +138,7 @@ return (
         <section>
           <h2>14. What building is the TCC food pantry located in, and what are their hours of operation?</h2>
           <p>
-            The food pantry is located in <strong>Building 17</strong>.
+            The food pantry is located in Building 17.
           </p>
           <p>Hours of operation:</p>
           <ul>

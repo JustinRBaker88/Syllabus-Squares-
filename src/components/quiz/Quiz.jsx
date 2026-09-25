@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { QuizQuestions } from '../../data/questions';
 
-// Helper function to shuffle questions array on load
 function shuffleArray(array) {
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
@@ -19,13 +18,17 @@ export default function Quiz({ onHome }) {
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
-  // Randomize questions whenever the quiz starts/restarts
   useEffect(() => {
     restartQuiz();
   }, []);
 
   const restartQuiz = () => {
-    setQuestions(shuffleArray(QuizQuestions));
+    const preparedQuestions = shuffleArray(QuizQuestions).map((q) => ({
+      ...q,
+      options: shuffleArray(q.options),
+    }));
+
+    setQuestions(preparedQuestions);
     setCurrentIndex(0);
     setSelectedOption(null);
     setIsSubmitted(false);
@@ -38,7 +41,7 @@ export default function Quiz({ onHome }) {
   const currentQuestion = questions[currentIndex];
 
   const handleSelect = (option) => {
-    if (isSubmitted) return; // Freeze selection after submission
+    if (isSubmitted) return;
     setSelectedOption(option);
   };
 
@@ -60,7 +63,6 @@ export default function Quiz({ onHome }) {
     }
   };
 
-  // Final Score View
   if (isFinished) {
     const percentage = Math.round((score / questions.length) * 100);
     return (
@@ -82,7 +84,6 @@ export default function Quiz({ onHome }) {
 
   return (
     <div className="quiz-container">
-      {/* Top Header */}
       <div className="view-header">
         <span className="quiz-progress">
           Question {currentIndex + 1} of {questions.length}
@@ -92,10 +93,8 @@ export default function Quiz({ onHome }) {
         </button>
       </div>
 
-      {/* Question Text */}
       <h2 className="quiz-question">{currentQuestion.question}</h2>
 
-      {/* Options List */}
       <div className="options-list">
         {currentQuestion.options.map((option, idx) => {
           const isSelected = selectedOption === option;
@@ -127,14 +126,12 @@ export default function Quiz({ onHome }) {
         })}
       </div>
 
-      {/* Explanation banner after submitting */}
       {isSubmitted && currentQuestion.explanation && (
         <div className="explanation-box">
           <strong>Explanation:</strong> {currentQuestion.explanation}
         </div>
       )}
 
-      {/* Submit / Next Controls */}
       <div className="quiz-footer">
         {!isSubmitted ? (
           <button
